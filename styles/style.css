@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header*/
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 15px;
+}
+
+/* Hero Section */
+
+#hero {
+    text-align: center;
+    padding: 32px 0;
+    background-color: #f0f0f0;
+}
+
+#hero h1{
+  font-weight: bold; 
+  animation-name: welcome;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  margin: 5px; 
+}
+#hero p{
+    margin: 5px;
+}
+#hero button{
+    margin: 5px;
+    height: 30px;
+    width: 100px;
+    border-radius: 5%;
+    
+
+}
+.cv:hover{
+    background-color: rgb(111, 206, 244);
+    cursor: pointer;
+
+    
+    /*loading Section*/
+
+}
+.loader{
+    background-color:#f1f0f0;
+    height: 100px;
+    width: 100px;
+    
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    z-index: 10000;
+    margin: auto;
+}
+.loader-element{
+    border-radius: 100%;
+    margin: calc(5px*2);
+}
+.loader-element:nth-child(1){
+     border: 5px solid #ffc312;
+    animation: preloader 3s ease-in-out alternate 1s infinite;
+}
+.loader-element:nth-child(2){
+    border: 5px solid #d32349;
+    animation: preloader 3s ease-in-out alternate 3s infinite;
+}
+
+.loader-element:nth-child(3){
+    border: 5px solid #3015cc;
+    animation: preloader 3s ease-in-out alternate 4s infinite;
+}
+@keyframes preloader{
+    100%{
+        transform: scale(2);
+    }
+}
+
+/* About Section*/
+
+#about {
+    padding: 32px 0;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    margin-left: 30px;
+
+}
+.about-h2{
+    margin-left: 20px;
+}
+
+/* Projects Section*/
+
+
+#projects {
+    padding: 10px 10px;
+
+}
+
+.project-h2{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, .8fr));
+    grid-gap: 35px;
+    cursor: pointer;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Contact Section*/
+
+#contact {
+    padding: 32px 0;
+}
+.contact-h2{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.project-grid .project img{
+    height: 150px;
+    width: 200px;
+}
+.about-container img{
+    height: 200px;
+    width: 200px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+form button{
+    height: 30px;
+    width: 80px;
+    background-color: skyblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer{
+    height: 50px;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+/*Animation*/
+
+@keyframes welcome{
+    from{
+transform: scaleX(5s);
+letter-spacing: 20px;
+border: 1px solid grey;
+background-color: skyblue;
+    }
+    to{
+color: rgb(127, 127, 133);
+
+
+    }
+}
+
+/* Responsive*/
+
+
+@media screen and (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
