@@ -80,7 +80,7 @@ nav a {
     margin: calc(5px*2);
 }
 .loader-element:nth-child(1){
-     border: 5px solid #ffc312;
+     border: 5px solid #0bcd2f;
     animation: preloader 3s ease-in-out alternate 1s infinite;
 }
 .loader-element:nth-child(2){
@@ -89,7 +89,7 @@ nav a {
 }
 
 .loader-element:nth-child(3){
-    border: 5px solid #3015cc;
+    border: 5px solid #2626f7;
     animation: preloader 3s ease-in-out alternate 4s infinite;
 }
 @keyframes preloader{
