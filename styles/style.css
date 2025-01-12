@@ -29,7 +29,9 @@ nav a {
     color: #fff;
     padding: 8px 15px;
 }
-
+nav a ::after{
+    text-decoration: underline;
+}
 /* Hero Section */
 
 #hero {
@@ -184,9 +186,13 @@ form button{
     background-color: skyblue;
     border-radius: 5px;
     cursor: pointer;
+
 }
-form button :hover:after{
-    background-color: #3015cc;
+form button::after{
+    content: "";
+    border-radius: 20%;
+    background-color: #102db1;
+    z-index: -100;
 }
 form button:hover{
     background-color: green;
