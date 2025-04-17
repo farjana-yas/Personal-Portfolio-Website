@@ -29,9 +29,7 @@ nav a {
     color: #fff;
     padding: 8px 15px;
 }
-nav a ::after{
-    text-decoration: underline;
-}
+
 /* Hero Section */
 
 #hero {
